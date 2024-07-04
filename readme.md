@@ -12,15 +12,15 @@ Welcome to the Crypto Price Tracker! This project fetches the top 10 cryptocurre
 ### How to Set It Up
 
  **Clone the repo:**
-   ```bash
+```bash
    git clone https://github.com/avinasha18/crypto-price-tracker.git
    cd crypto-price-tracker
-   ```
+```
 # Install the packages:
-    ```bash
+```bash
     npm install
     Set up PostgreSQL:
-    ```
+```
 
 Create a database named postgres (or any name you like).
 Update the database connection settings in server.js if needed.
@@ -51,6 +51,7 @@ GET /average-prices: Shows the average prices for the top 10 cryptocurrencies ov
 GET /percentage-change: Shows the percentage change for the top 10 cryptocurrencies over various time periods.
 # Project Layout
 
+```bash
 crypto-price-tracker/
 ├── node_modules/
 ├── public/
@@ -60,6 +61,7 @@ crypto-price-tracker/
 ├── server.js
 ├── package.json
 └── README.md
+```
 ### Tech Used
     Node.js
     Express.js
