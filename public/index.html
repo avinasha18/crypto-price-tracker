@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>HODLINFO</h1>
+      <div class="right-header">
+        <div class="timer" id="timer">00:00</div>
+        <div class="switch-theme">
+          <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </header>
+    
+    <div class="control-bar">
+      <select id="currency-select">
+        <option value="INR">INR</option>
+      </select>
+      <select id="crypto-select">
+        <option value="BTC">BTC</option>
+      </select>
+      <button class="buy-btc-button">BUY BTC</button>
+    </div>
+    
+    <div class="stats-bar">
+      <div class="stat">
+        <span class="value" id="five-min-change">0.00 %</span>
+        <span class="label">5 Mins</span>
+      </div>
+      <div class="stat">
+        <span class="value" id="one-hour-change">0.00 %</span>
+        <span class="label">1 Hour</span>
+      </div>
+      <div class="stat">
+        <span class="value" id="one-day-change">0.00 %</span>
+        <span class="label">1 Day</span>
+      </div>
+      <div class="stat">
+        <span class="value" id="seven-day-change">0.00 %</span>
+        <span class="label">7 Days</span>
+      </div>
+      <div class="stat">
+        <span class="value big" id="average-price">₹ 0.00</span>
+        <span class="label">Average BTC/INR</span>
+      </div>
+    </div>
+    
+    <table id="crypto-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Last Traded Price</th>
+          <th>Buy / Sell Price</th>
+          <th>Difference</th>
+          <th>Savings</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
